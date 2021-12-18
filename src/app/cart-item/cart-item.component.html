@@ -1,0 +1,19 @@
+<div class="cart-item-details" *ngIf="cartItem">
+    <div class="detail-item"><img src="{{cartItem.url}}"></div>
+    <div class="select-input">
+        <div>
+            <p style="font-weight: bold">{{ cartItem.name }}</p>
+            <p>{{ cartItem.price | currency }}</p>
+        </div>
+        <div>
+            <form>
+                <label for="product-quantity">Amount </label>
+                <input class="number-input" type="number" name="product-quantity" min="0" value={{cartItem.quantity}}
+                    [(ngModel)]="cartItem.quantity" (ngModelChange)="onSelect($event)"><br><br>
+                <label for="delete-from-cart"></label>
+                <input type="button" name="delete=from=cart" value="Remove"
+                    (click)="deleteFromCart(cartItem)">
+            </form>
+        </div>
+    </div>
+</div>

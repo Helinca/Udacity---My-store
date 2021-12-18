@@ -1,0 +1,25 @@
+.center {
+    text-align: center;
+  color:rgb(146, 149, 151);
+  margin: 125px;
+}
+h1 {
+    color: #33d6db;
+}
+span {
+    font-weight:bold;
+    color: black;  
+}
+  button {
+    border: 1px solid;
+    border-radius: 7px;
+    background:  #33B5E5;
+    color: #fff;
+    padding: 10px;
+    margin: 8px 0;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #23728f;
+  }

@@ -1,0 +1,38 @@
+<div class="cart-container">
+  <div class="cart-item">
+    <div class="cart-item-details">
+      <div *ngIf="!total">
+        <h1 class="empty-cart-message">Your cart is empty</h1>
+    </div>
+      <div>
+        <app-cart-item *ngFor="let product of cartList" [cartItem]="product" (newTotal)="newTotal($event)">
+        </app-cart-item>
+      </div>
+      <div style="color: #23728f;; text-align: center;">
+        <h1>Total: {{total | currency }}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="cart-item"  *ngIf="total">
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Full name</label><br>
+        <input type="text" id="name" name="name" required minlength="3" formControlName="name"
+          placeholder="(minimum 3 characters)">
+      </div>
+      <div>
+        <label for="name">Address</label><br>
+        <input type="text" id="address" name="address" required minlength="6" formControlName="address"
+          placeholder="(minimum 6 characters)">
+      </div>
+      <div>
+        <label for="creditCard">Credit card number</label><br>
+        <input type="text" id="creditCard" name="creditCard" required  pattern="^[0-9]{16}$"
+          formControlName="creditCard" placeholder="(16-digit number)">
+      </div>
+      <div>
+        <input type="submit" [disabled]="checkoutForm.invalid" value="Submit" class="button">
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+img {
+    border-radius: 10px;
+    width: 320px;
+  }
+  
+  .select-input {
+    width: 108px; 
+    margin-bottom: 8px;
+  }
+  
+  .detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+  }
+  
+  .detail-item {
+    margin-left: 128px;
+    margin-right: 128px;
+  }
+  
+  .back-link {
+    margin-top: 8px;
+    color:#33B5E5;
+    text-decoration: none;
+  }
+
+  .back-link:hover {
+      color: #23728f;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 7px;
+    background:  #33B5E5;
+    color: #fff;
+    padding: 10px;
+    margin: 8px 0;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #23728f;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+  }
+
+  select:hover {
+    border: 1px solid #23728f;
+  }

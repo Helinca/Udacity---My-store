@@ -1,0 +1,29 @@
+img {
+    width: 100px;
+    border-radius: 10px;
+  }
+
+  .detail-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 45%;
+  }
+  .select-input {
+    width: 100%; 
+    margin-bottom: 8px;
+    margin-left: 50px;
+  }
+  .cart-item-details {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-left: 0px;
+    padding: 10px;
+  }
+  .number-input {
+    width: 80px;
+    text-align: center;
+  }
+input :hover {
+  border-color: #23728f;
+}
